@@ -11,15 +11,13 @@ public class ex0809 {
     }
 
     public static long getTimeMsOfInsert(List list) {
-        //напишите тут ваш код
-        Date currentTime = new Date();
 
+        Date currentTime = new Date();
         insert10000(list);
         Date newTime = new Date();
-        //напишите тут ваш код
         long msDelay = newTime.getTime() - currentTime.getTime();
-
         return msDelay;
+
     }
 
     public static void insert10000(List list) {
